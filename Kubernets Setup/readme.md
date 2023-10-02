@@ -34,3 +34,17 @@ $ kubctl get pod
 ```bash
 $ kubectl delete pod <name>
 ```
+
+
+# Imperative
+
+- Creation of pods
+```bash
+$ kubectl run <name> --image=nginx:alpine --restart=Never
+```
+
+- Creation of nginx and expose to port 8080
+
+```bash
+$ kubectl run nginx --image=nginx:alpine --port=8080 --restart=Never
+```
